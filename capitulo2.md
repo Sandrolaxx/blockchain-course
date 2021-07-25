@@ -32,7 +32,7 @@ Os generais bizantinos precisam de um algoritmo de consenso que:
 <br>
 
 >Desenho do Problema dos Generais Bizantinos
-![Desenho do Problema dos Generais Bizantinos](https://0xzx.com/wp-content/uploads/2020/05/0uEXW_trE2s281pBX-768x345.png)
+![Desenho do Problema dos Generais Bizantinos](/images/generaisBizantinos.png)
 
 <br>
 
@@ -45,7 +45,7 @@ Então, como você pode confiar nos outros membros da rede e garantir que as ent
 <br>
 
 >Problema dos Generais em uma Rede Blockchain
-![Problema dos Generais em uma Rede Blockchain](https://0xzx.com/wp-content/uploads/2020/05/0__BdKaJDjTcm3bCX.png)
+![Problema dos Generais em uma Rede Blockchain](/images/generaisBizantinosBlockchain.png)
 
 <br>
 
