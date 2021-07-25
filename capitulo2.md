@@ -29,13 +29,26 @@ Os generais bizantinos precisam de um algoritmo de consenso que:
 1. Todos os generais decidam pelo mesmo plano de ação, eles farão o que for decidido, enquanto os traidores farão o que quiserem.
 2. Um pequeno número de traidores não influencie a decisão dos generais leais, fazendo-os tomar a pior decisão.
 
-![Desenho do Problema dos Generais Bizantinos](https://on.fiap.com.br/pluginfile.php/1/local_conteudoshtml/conteudo/9187/assets/private/on-image-problema-generais-bizantinos.svg)
+<br>
+
+>Desenho do Problema dos Generais Bizantinos
+![Desenho do Problema dos Generais Bizantinos](https://0xzx.com/wp-content/uploads/2020/05/0uEXW_trE2s281pBX-768x345.png)
+
+<br>
 
 Nesse caso se todos os generais trocarem mensagens entre si, eles poderiam optar pelo plano de ação mais recebido, desconsiderando a opção "votada" em minoria.
 
 Em um livro-razão distribuído, quaisquer entradas(as mensagens) para o livro-razão(o ataque acordado) devem ser confiáveis. As redes digitais geralmente possuem milhares a milhões de membros ou nós(os generais) que estão dispersos globalmente e não há um comando centralizado(nenhuma governança central), e é impossível se conhecer e confiar em todos os membros. 
 
 Então, como você pode confiar nos outros membros da rede e garantir que as entradas para o registro distribuído sejam precisas e, além disso, garantir que este possua as informações corretas? O *Blockchain* resolve esse problema e, no caso do nosso general bizantino, garante que ele possa enviar mensagens confiáveis e liderar um ataque bem-sucedido e coordenado(GHOSH,2016).
+
+<br>
+
+>Problema dos Generais em uma Rede Blockchain
+![Problema dos Generais em uma Rede Blockchain](https://0xzx.com/wp-content/uploads/2020/05/0__BdKaJDjTcm3bCX.png)
+
+<br>
+
 
 ---
 
