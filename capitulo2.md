@@ -55,3 +55,35 @@ Então, como você pode confiar nos outros membros da rede e garantir que as ent
 ## Descentralização e o Ataque de 51%
 
 O grande risco de um *blockchain* é que vários membros mal-intencionados da rede, tenha majoritariamente a maioria dos nós da rede, ou seja, 51% dela, assim tendo o controle da rede, de modo a centralizar as decisões e também comandá-las, e caso queiram, por exemplo, reorganizar blocos já validados, assim desfazendo eles e manipular as regras da rede a sua própria escolha.
+
+---
+
+## Como Atigir o Consenso em Uma Rede Descentralizada
+
+Conforme abordado anteriormente, além de garantir que os dados registrados neste livro-razão são confiáveis, cada membro da rede deve possuir uma **cópia idêntica e completa** desse livro-razão. Por se tratar de um livro-razão que é escrito a todo instante, ele é dividido em blocos que contém as transações, operações ou dados que devem ser registrados.
+
+Sempre que novas informações precisam ser registradas, um novo bloco deve ser criado, preenchido, validado e posicionado no final do livro-razão, incrementando este grande documento. Estes blocos são encadeados de tal maneira que a assinatura usada para validar o bloco anterior é necessária para validar o novo bloco, criando a famosa "cadeia de blocos" que batiza a tecnologia.
+
+É esse encadeamento que torna a blockchain imutável, já que a alteração ou remoção de um dado já registrado necessitaria da revalidação do bloco em que o dado está e todos os blocos gerados anterior e posteriormente.
+
+No entanto, vamos abordar a seguinte questão: Se as cópias do blockchain são idênticas, como decidir quais transações serão registradas aos novos blocos? Através de algoritmos de consenso, é claro! A cada novo bloco é eleito um membro que ganha o direito de registrar os dados no bloco, cabendo aos demais a função de validá-lo.
+
+Vários são os algoritmos de consenso aplicados para este fim, cada um com suas vantagens e desvantagens. Veremos em detalhes os dois mais utilizados, o Proof of Work(POW) e Proof of Steak(POS), e daremos uma visão geral sobre alguns outros não tão utilizados.
+
+---
+
+## Proof of Work(POW) Aplicado no Consenso de Nakamoto
+
+A Prova de Trabalho(ou Proof of Work) é um protocolo criptográfico criado para prevenção de ataques cibernéticos de negação de serviço(Denial of Service) e Spam, proposto por Cynthia Dwork e Moni Naor em um artigo de 1993. O termo "Prova de Trabalho", entretanto, só foi cunhado seis anos depois, em um artigo de Markus Jakobson e Ari Juels.
+
+Inspirado por BACK(2002), que explorou a Prova de Trabalho para ataques de negação de serviço em um mecanismo batizado de Hashback, Satoshi Nakamoto adaptou os conceitos de Prova de Trabalho que funcionasse como um algoritmo de consenso(NAKAMOTO, 2008), o que passou a ser conhecido posteriormente como consenso de Nakamoto(Nakamoto Consensus).
+
+### Mecanismo
+
+Nesta abordagem, a cada bloco um líder é eleito através de uma forma de "loteria". Falando especificamente da rede Bitcoin, um enigma criptográfico é proposto pelo protocolo e os membros que participam desta rede se propõem a decifrá-lo. Basicamente o enigma é a execução de uma função hash SHA-256 utilizando alguns dados específicos do bloco atual e um número aleatório, resultando em um hash que comece com um determinado número de zeros. Se o número de zeros em questão não for obtido, a função hash deve ser tentada utilizando outro número aleatório.
+
+O enigma criptográfico é este: adivinhar o número aleatório(também conhecido como **nonce**) que, aliada as informações do bloco, deve resultar em um hash iniciado por um número de zeros. Para se ter uma ideia como a adivinhação deste número é algo trabalhoso, milhões de tentativas são feitas em um único segundo e este processo de descoberta leva em torno de dez minutos para acontecer.
+
+Os participantes de rede competem entre si, apostando uma corrida de quem será o primeiro a adivinhar este número. O nó que conseguir fazer isso primeiro comunica imediatamente aos demais participantes qual é o número aleatório; estes, por sua vez, param de utilizar números aleatoriamente e usam o número informado para validar a vitória do reclamante. Confirmada a solução do enigma, os participantes da rede, em consenso, elegem este nó como líder.
+
+O líder eleito tem o direito de determinar quais transações de Bitcoin não confirmadas irão compor o novo bloco; as transações realizadas e não confirmadas do Bitcoin formam uma fila que o membro líder deve consultar. Em novembro de 2019, o tamanho exato do bloco é de apenas 1MB, espaço capaz de armazenar cerca de três mil transações por vez. Todas as demais transações não escolhidas para confirmação no novo bloco permanecem na fila de espera e serão confirmadas nos blocos seguintes. Escolhidas as transações, o vencedor propaga o bloco formado para os demais participantes, e estes armazenam o bloco final da corrente e se preparam para a próxima corrida.
