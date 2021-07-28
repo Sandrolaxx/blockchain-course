@@ -87,3 +87,49 @@ O enigma criptográfico é este: adivinhar o número aleatório(também conhecid
 Os participantes de rede competem entre si, apostando uma corrida de quem será o primeiro a adivinhar este número. O nó que conseguir fazer isso primeiro comunica imediatamente aos demais participantes qual é o número aleatório; estes, por sua vez, param de utilizar números aleatoriamente e usam o número informado para validar a vitória do reclamante. Confirmada a solução do enigma, os participantes da rede, em consenso, elegem este nó como líder.
 
 O líder eleito tem o direito de determinar quais transações de Bitcoin não confirmadas irão compor o novo bloco; as transações realizadas e não confirmadas do Bitcoin formam uma fila que o membro líder deve consultar. Em novembro de 2019, o tamanho exato do bloco é de apenas 1MB, espaço capaz de armazenar cerca de três mil transações por vez. Todas as demais transações não escolhidas para confirmação no novo bloco permanecem na fila de espera e serão confirmadas nos blocos seguintes. Escolhidas as transações, o vencedor propaga o bloco formado para os demais participantes, e estes armazenam o bloco final da corrente e se preparam para a próxima corrida.
+
+### Incentivo 
+
+O conceito de Prova de Trabalho está na solução do "enigma"(puzzle) criptográfico... o achado do número é a prova de que alto poder computacional foi empregado. Por se tratar de um *blockchain* público, membros podem entrar e sair da rede de Bitcoin a qualquer momento, sendo assim, podemos ter novos membros fazendo esse processo de validação. No entanto, por que alguém faria um alto investimento em equipamentos, energia elétrica e conectividade de graça?
+
+É aqui que entra o engenhoso incentivo criado por Satoshi: o líder do bloco (e somente o líder) ganha uma recompensa em bitcoins. Para não inundar o sistema econômico gerando todos os bitcoins de uma vez, novas unidades são geradas e inseridas no sistema a uma taxa constante. São estas novas unidades da moeda que são entregues aos líderes do consenso.
+
+Há um princípio econômico que diz que para algo ser considerado valioso, ele precisa ser finito e escasso. Sendo assim, bitcoins não poderiam ser gerados indefinidamente e, por essa razão, o sistema foi progamado para parar de gerar novas unidades quando o total atingir 21 milhões de unidades. Para tal, como pode ser visto no próprio código-fonte do Bitcoin no GitHub, temos a seguinte linha:
+
+```
+Consensus.nSubsidyHalvingInternal = 210,000
+```
+O que significa que a cada 210 mil blocos gerados, acontece um evento conhecido como *halving*, que faz com que a recompensa caia pela metade. A rede começou com a recompensa de 50 BTC por bloco, caindo para 25 BTC em quatro anos, 12,5 quatro anos seguintes e em 2020 a recompensa passará a ser 6,25 BTC.
+
+NAKAMOTO(2008) considerou a consição destes validadores de rede análoga ao de mineradores de ouro, que empregam recursos para adicionar mais ouro em circulação no mercado, e é por esta razão que estes participantes são chamados de mineradores(miners). Observe que emboraa eles possam este nome, o principal papel dos mineradores é a validação das transações do *blockchain*. 
+
+Quando o último Bitcoin for gerado em algum momento no ano de 2140, NAKAMOTO(2008) prevê que a mineração continuará graças as taxas de rede, um valor que os emissores de transação hoje pagam para ter prioridade em suas confirmações.
+
+### Vantagens e Desvantagens
+
+O consenso de Nakamoto elege seu líder em uma abordagem de loteria, ao promover um enigma criptográfico que obrigue os participantes a adivinhar o *nonce* cujo o **hash** satisfaça os parâmetros do sistema. No entanto, esta abordagem seria pseudorrandômica, afinal, os membros podem investir em equipamentos que adivinhem o *nonce* cada vez mais depressa, aumentando suas chances de serem escolhidos. Existem hardwares especializados conhecidos como ASICs(*Application-specific Integrated Circuit* ou Circuito Integrado de Aplicação Específica) que, diferentemente de nossos desktops ou laptops criados para múltiplos propósitos, são concebidos especificamente para mineração de Bitcoins. Um exemplo é o Bitmain Antminer S9i que com seus 189 chips é capaz de chegar a 19.5 TH/s, ou seja, ela pode "chutar" mais de 14 trilhões de *nonces* em  um único segundo(BITMAIN, s.d).
+
+<br>
+
+>Imagem do modelo ASICs Bitmain Antimainer S9I 
+![Bitmain antimainer S9I](/images/bitmain.png)
+
+<br>
+
+As ASICs no site da Bitmain custam, em média, dois mil dólares a unidade. É possível formar um *cluster* com este tipo de equipamento, aumentando as chances de se tornar o líder do bloco, sendo assim, dificilmente se adiquire uma única unidade, e foi assim que surgiram as fazendas de mineração.
+
+<br>
+
+>Fazenda de mineração clandestina
+![Fazenda de mineração clandestina](/images/fazendaMineracao.png)
+
+<br>
+
+Os altos preços atingidos pelo Bitcoin tornaram a atividade altamente rentável e a corrida criptográfica se tornou uma corrida por hardware. Se no início a mineração de Bitcoin era possível utilizando placas de vídeo de computadores comuns, há vários anos se tornou inviável. Sendo assim, mineração de bitcoins é "coisa de gente grande".
+
+Se por um lado a escala de hardware torna o *blockchain* do Bitcoin mais seguro ao obrigar provas de trabalho cada vez mais complexas, por outro, torna-o inseguro ao centralizar cada vez mais a atividade na mão de poucos participantes que estejam dispostos a fazer altíssimos investimentos na aquisição e manutenção do hardware envolvido. A figura "Mineração de bitcoins por pool de mineração" mostra a atividade de mineração em um no dia 26 de julho de 2021 dividida em pools de mineração(que podem ser uma ou mais fazendas de mineração juntando forças pelo "bem comum").
+
+>Mineração de bitcoins por pool de mineração 26/07/2021
+![Mineração de bitcoins por pools de mineração](/images/poolsMIneracao.png)
+
+Observe que, se os quatro principais pools de mineração resolvessem se tornar um só, este novo pool possuiria sozinho mais da metade do poder computacional da rede possibilitando um ataque de 51%.
