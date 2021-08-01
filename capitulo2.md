@@ -68,11 +68,11 @@ Sempre que novas informações precisam ser registradas, um novo bloco deve ser 
 
 No entanto, vamos abordar a seguinte questão: Se as cópias do blockchain são idênticas, como decidir quais transações serão registradas aos novos blocos? Através de algoritmos de consenso, é claro! A cada novo bloco é eleito um membro que ganha o direito de registrar os dados no bloco, cabendo aos demais a função de validá-lo.
 
-Vários são os algoritmos de consenso aplicados para este fim, cada um com suas vantagens e desvantagens. Veremos em detalhes os dois mais utilizados, o Proof of Work(POW) e Proof of Steak(POS), e daremos uma visão geral sobre alguns outros não tão utilizados.
+Vários são os algoritmos de consenso aplicados para este fim, cada um com suas vantagens e desvantagens. Veremos em detalhes os dois mais utilizados, o Proof of Work(PoW) e Proof of Steak(PoS), e daremos uma visão geral sobre alguns outros não tão utilizados.
 
 ---
 
-## Proof of Work(POW) Aplicado no Consenso de Nakamoto
+## Proof of Work(PoW) Aplicado no Consenso de Nakamoto
 
 A Prova de Trabalho(ou Proof of Work) é um protocolo criptográfico criado para prevenção de ataques cibernéticos de negação de serviço(Denial of Service) e Spam, proposto por Cynthia Dwork e Moni Naor em um artigo de 1993. O termo "Prova de Trabalho", entretanto, só foi cunhado seis anos depois, em um artigo de Markus Jakobson e Ari Juels.
 
@@ -144,3 +144,41 @@ Segundo o tstemunho apresentado no comitê de energia e recursos naturais do sen
 <br>
 
 Por fim, no caso do Bitcoin, temos um problema de escalabilidade. Cada bloco minerado possui apenas 1 megabyte de espaço disponível para registrar as transações financeiras, o que possibilita três mil transações em média. Como cada bloco é minerado a cada dez minutos (e cada vez que o poder computacional sobe, a dificuldade para advinhar o **nonce** também sobe proporcionalmente), a rede desta criptomoeda seria capaz de validar apenas 7 transações por segundo, o que o inviabilizaria para uma série de aplicações. Embora existam discussões em relação ao aumento do tamanho do bloco e validações de transações em sidechains (como caso da Lightnin Network), o consenso de Nakamoto é, por concepção e design, um consenso mais lento para maior controle da geração sistemática de blocos encadeados e a possíbilidade de orfanar blocos que por ventura sejam gerados fora da corrente principal. Assim sendo, faz-se necessário a discussão e aplicação de outros algoritmos de consenso para diferentes aplicações.
+
+---
+
+## Proof of Stake(PoS)
+
+Em 2011, um usuário do fórum *Bitcoin talk* chamado **Quantum Mechanic** propôs um novo algoritmo de consenso chamado Proof of Stake. Embora a abordagem também envolva a eleição de um líder de forma aleatória(*lottery approach*), os candidatos à lider deixam de fazer investimentos em *hardware* e passam a fazer investimentos no próprio criptoativo que deve ser validado. O candidato à lider se compromete a "trancar" na rede uma quantidade de criptoativos que servirá de garantia das transações que ele se propõe a validar. Desta forma, caso o líder eleito valide transações fraudulentas, ele é punido pois sua garantia (*stake*) será utilizada para sanar eventuais prejuízos.
+
+Trata-se de uma evolução interessante em relação à Prova de Trabalho aplicada no consenso de Nakamoto: embora a rede possua mecanismos para rejeitar transações fraudulentas, o responsável pela fraude não é punido, ele está "livre" para realizar novas tentativas no futuro. O stake "feito de refém" pela rede e a possibilidade de ter um prejuízo financeiro desencoraja eventuais fraudes no sistema. Além disso, os validadores (e não mineradores) são proprietários de grandes somas no criptoativo que estão validadndo, assim sendo, permitir fraudes significaria perda de credibilidade e, por consequência, prejuízos financeiros no longo prazo. Os validadores, portanto, tornaram-se os maiores interessados em manter a saúde do sistema.
+
+Assim como acontece no consenso de Nakamoto, prevê-se uma recompensa para os membros de rede que queiram fazer esse papel de validadores. Repare que no Proof of Stake, eles não são chamados de **mineradores** e recebem um nome mais representativo pois, *validar* as transações e promover uma confiança descentralizada é justamente o principal papel destes membros, o recebimento de novos criptoativos é uma consequência deste papel.
+
+Por receberem como recompensa criptoativos da rede que se compromentem a validar e por serem obrigados a realizar um alto investimento neste criptoativo para se candidatarem ao papel de validadores(em detrimento do consenso de Nakamoto, cujo alto investimento é feito em *hardware*), eles se tornarem os maiores interresados em manter a saúde financeira do sistema. Caso optem por validar transações fraudulentas na rede, permitam o gasto duplo ou ataque de 51%, a credibilidade do criptoativo será abalada e isso se refletirá rapidamente no preço do mesmo, que provavelmente despencará. Não esqueçamos, além disso, da própria rede detectar as fraudes e confiscar o *stake* deste validador para cobrir prejuízos. Assim sendo, há vários estímulos para a honestidade por parte dos validadores.
+
+### Vantagens e Desvantagens
+
+Existem, é claro, várias críticas ao algoritmo Proof of Stake. Do ponto de vista econômico, boa parte do suprimento da criptomoeda seria comprometido, "estacionando" em carteiras dos membros que fazem o papel de validadores. Uma moeda "boa" é aquela que circula em um sistema financeiro, serve para pagamentos de produtos ou serviços, serve como unidade de valor e outras propriedades.
+
+Um dos componentes mais importantes de precificação de um criptoativo é a quantidade deste que está sendo negociado nas *exchenges*, sendo comprado e vendido. Um criptoativo que possua boa parte de seu valor estacionado pode sofrer oscilações maiores em sua cotação pois, um validador em um determinado momento está com seu patrimônio "estacionado" e no momento seguinte resolve "vender tudo", tornando-se o que neste mercado é chamado de whale(baleia). Um grande volume de moedas sendo vendidas de uma só vez acaba comprometendo seu valor de mercado.
+
+Por outro lado, o ataque de 51% se torna mais improvável em uma abordagem Proof of Stake. Se, em um exercicío hipotético, o *blockchain* do Bitcoin se tornasse Proof of Stake, seriam necessários 75 bilhões de dólares em bitcoins para efetuar um ataque de 51%, já que as mais de 17,7 milhões de unidades em circulação valem, em maio de 2019, mais de 150 bilhões de dólares.
+
+Por outro lado, uma vez que um membro consiga custodiar mais de 50% dos criptoativos de uma rede de *blockchain*, seria extremamente complicado reverter essa situação, pois este membro exerceria seu poder econômico, tornando-se validador em grande parte das oportunidades e efetuando ataques de 51%, recebendo continuamente as recompensas de bloco validado e permanecendo cada vez mais "rico" naquela cripto. Se, no consenso de Nakamoto, um único membro possuir mais de 51% da rede pode ser revertido com outros membros da rede fazendo altos investimentos em hardware, a soberania e maioria em uma rede Proof of Stake seria dificilmente revertida. Assim sendo, recomenda-se muita atenção, especialmente em criptoativos mais jovens e suscetíveis ao fenômeno ao terem redes muito menores e ativos mais baratos de serem adquiridos.
+
+O algoritmo de eleição de líder precisa respeitar um equilibrio delicado, pois ele não pode ser totalmente randômico; o tamanho do *stake* deve ser um fator decisivo para a eleição, pois quanto maior o *stake*, maior é a garantia de transações que o eleito está comprometendo no sistema, tornando-o mais seguro. Por outro lado, o tamanho do *stake* não pode ser o único fator para a seleção pois, neste caso, apenas os validadores mais ricos seriam escolhidos novamente e desencorajando outros validadores com *stakes* menores a fazer este papel. Seja um algoritmo de consenso Proof of Work ou Proof of Stake, há sempre a tendência à centralização, sendo assim, manter o sistema descentralizado é um desafio para qualquer ecossistema de *blockchain*.
+
+É por esta razão que existem várias propostas de Proof of Stake. A rede Ethereum procura manter este equilíbrio complicado com um conjunto de smart Contracts, e o consenso desta plataforma é chamado de Casper PoS que, em dezembro de 2020, foir lançado ainda em caráter de de testes em uma rede que vem sendo chamada de Ethereum 2.0(MESSARI, 2020), enquanto a rede principal (mainnet) continua a trabalhar no algoritmo de consenso vigente, o Proof of Work (PoW). Saiba que o Ethereum é a segunda maior rede pública de *Blockchain*, avaliada em mais de 28 bilhões de dólares e a troca de PoW para Casper PoS é um grande passo.
+
+Outra grande rede de criptoativos que propõe o Proof of Stake é a Cardano(12º maior criptoativo em novembro de 2019 segundo o índice da Coinmarketcap), que propõe um algoritmo de PoS chamado de **Ouroboros**. De qualquer maneira, este algoritmo de consenso foi proposto e precisa ser colocado à prova, o que deve acontecer em breve.
+
+---
+
+## Outros Algoritmos de Consenso
+
+Conforme já mensionamos em capítulos anteriores, existem outros algoritmos de consenso em estudo ou mesmo em funcionamento. Em rede de blockchain permissionadas, cujos nós de validação são conhecidos, outros algoritmos como o Proof of Authority(PoA) são mais indicados. *Blockchains* que utilizam a tecnologia Hyperledger costumam utilizar algoritmos de consenso baseados no problema dos generais bizantinos, como Practical Byzantine Fault Tolerance(PBFT), embora o Hyperledger permitas escolher várias opções de algoritmos de consenso.
+
+Em geral, redes de *blockchain* permissionadas não possuem incentivos para o papel da validação, seja por que o incentivo de manter um nó de validação é intrínseco ao negócio (o membro precisa da rede de *blockchain* funcionando para poder vender seus produtos ou prestar seus serviços) ou a rede de blockchain não faz parte de um sistema financeiro, como um *blockchain* de rastreamento de alimentos em cadeia logística, ou um sistema de prontuário único de saúde, assim, nestes casos, não há uma "moeda" que mantenha o sistema funcionando e possa ser usada como recompensa.
+
+
