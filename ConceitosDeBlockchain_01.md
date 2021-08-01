@@ -274,18 +274,15 @@ CCM. Introdução à codificação DES. Disponível em: <http://br.ccm.net/conte
 
 CERQUEIRA, Aurimar Harry; STELER, Fernando Wosniak. Tudo o que você
 queria saber sobre blockchain e tinha receio de perguntar. 6 mar. 2017.
-Disponível em: <http://computerworld.com.br/tudo-o-que-voce-queria-saber-sobre-
-blockchain-e-tinha-receio-de-perguntar>. Acesso em: 20 jul. 2020.
+Disponível em: <http://computerworld.com.br/tudo-o-que-voce-queria-saber-sobre-blockchain-e-tinha-receio-de-perguntar>. Acesso em: 20 jul. 2020.
 
 GUPTA, Manav. Blockchain for Dummies. New Jersey: IBM Limited Edition, 2017.
-SIMPLY TECNOLOGIA. Blockchain: saiba o que é e como pode ser usado pelos
-bancos. Disponível em: <http://blog.simply.com.br/blockchain-saiba-o-que-e-e-como-
-pode-ser-usado/>. Acesso em: 20 jul. 2020.
 
 SIMPLY TECNOLOGIA. Blockchain: saiba o que é e como pode ser usado pelos
-Bancos. 01 jun. 2016. Disponível em: <http://blog.simply.com.br/blockchain-saiba-o-
-que-e-e-como-pode-ser-usado/>. Acesso em: 20 jul. 2020.
+bancos. Disponível em: <http://blog.simply.com.br/blockchain-saiba-o-que-e-e-como-pode-ser-usado/>. Acesso em: 20 jul. 2020.
+
+SIMPLY TECNOLOGIA. Blockchain: saiba o que é e como pode ser usado pelos
+Bancos. 01 jun. 2016. Disponível em: <http://blog.simply.com.br/blockchain-saiba-o-que-e-e-como-pode-ser-usado/>. Acesso em: 20 jul. 2020.
 
 TAPSCOTT, Don; TAPSCOTT, Alex. Blockchain Revolution – como a tecnologia
-por trás do bitcoin está mudando o dinheiro, os negócios e o mundo. São Paulo:
-Senai-SP Editora, 2016.
+por trás do bitcoin está mudando o dinheiro, os negócios e o mundo. São Paulo: Senai-SP Editora, 2016.
