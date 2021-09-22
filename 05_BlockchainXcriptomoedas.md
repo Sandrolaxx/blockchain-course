@@ -32,7 +32,7 @@ Embora pareça banal, tal mudança poderia trazer outras consequências para o d
 
 O conservadorismo da maioria irritou uma parte da comunidade que resolveu pegar o código-fonte original do Bitcoin, fazer as alterações que julgava necessárias e, diferentemente de outros criptoativos que começam seu “blockchain do zero” ou de um bloco gênese, decidiram que o Bitcoin Cash seria um fork do blockchain do Bitcoin: a partir do bloco 478558, o blockchain bifurcou, minerando Bitcoin em uma direção e Bitcoin Cash em outra.
 
-!["Logo do Bitcoin Cash"](/images/BlockchainXcriptomoedas/btccash.png)
+!["Logo do Bitcoin Cash"](/images/blockchainXcriptomoedas/btccash.png)
 <br>| - Logo do Bitcoin Cash(Fonte: HUFFMAN(2017))
 
 Na prática, as “moedas” foram duplicadas: quem tinha 1 bitcoin em uma carteira naquele momento, também tinha um 1 bitcoin cash no mesmo endereço de carteira. Curiosamente, não houve uma desvalorização expressiva do Bitcoin na época, cujo preço se manteve mais ou menos estável.
@@ -47,7 +47,7 @@ Em novembro de 2018, houve novamente um impasse, dessa vez na comunidade do Bitc
 
 Uma outra parte da comunidade Bitcoin acredita que, com o aumento crescente do hashrate e a necessidade de se minerar com ASICs cada vez mais poderosas, a rede de mineração está cada vez mais concentrada em poucas partes que possuem recursos financeiros para tal. Dessa maneira, tais partes poderiam impor seus interesses políticos e econômicos, arruinando assim a característica mais importante de um blockchain, a descentralização e o equilíbrio de forças dos participantes.
 
-!["Logo do Bitcoin Gold"](/images/BlockchainXcriptomoedas/btcgold.png)
+!["Logo do Bitcoin Gold"](/images/blockchainXcriptomoedas/btcgold.png)
 <br>| - Logo do Bitcoin Gold(Fonte: BITCOINGOLD(2018))
 
 Vencida pela vontade da maioria, essa parte da comunidade repetiu o processo feito pelo Bitcoin Cash, alterando o código-fonte para atender a suas necessidades e minerando um bloco do blockchain do Bitcoin de número 491407 em outra direção, bifurcando novamente a rede de blocos. Mais uma vez, as carteiras foram duplicadas e quem tinha bitcoins na ocasião possuía também Bitcoin Gold (BTG).
@@ -60,7 +60,7 @@ O tempo de confirmação de transações dos blocos de Bitcoin sempre foi fixado
 
 Se o Bitcoin é o ouro digital, o projeto do Litecoin (LTC) iniciado apenas dois anos depois pelo ex-funcionário da Google, Charles Lee, se propõe a ser a prata. Criado a partir do código-fonte do Bitcoin, a principal mudança foi no algoritmo de prova de trabalho e o tempo de confirmação fixado em dois minutos e meio.
 
-!["Logo do LiteCoin"](/images/BlockchainXcriptomoedas/litecoin.png)
+!["Logo do LiteCoin"](/images/blockchainXcriptomoedas/litecoin.png)
 <br>| - Logo do LiteCoin(Fonte: LITECOININFO(2018))
 
 A substituição no algoritmo de prova de trabalho também tornou mais difícil e caro criar ASICs para minerar a moeda, diminuindo a escalada de equipamentos para essa tarefa e, assim, inibindo os altos investimentos e a necessidade de taxas de rede, embora ela, segundo a BitinfoCharts (s.d.), tenha chegado a uma média recorde de 1,5 dólar no final de 2017.
@@ -75,7 +75,7 @@ Por ser uma comunidade menor e mais ousada, o projeto se tornou um excelente pil
 
 O Ripple é uma proposta muito diferente das demais sob diversos aspectos. Para começar, seu controle é centralizado na empresa que o criou, a Ripple Labs, Inc. Seu real valor é ter estabelecido um sistema de pagamentos do tipo RTGS (Real-time gross settlement), que são sistemas que transferem remessas de dinheiro de um banco a outro em tempo real com segurança e de maneira irrevogável. O sistema da empresa se coloca como uma opção de transferência financeira muito mais rápida, barata e confiável do que Western Union (o sistema de correio dos EUA) e a rede SWIFT, usada tradicionalmente para remessas internacionais.
 
-!["Logo do Ripple"](/images/BlockchainXcriptomoedas/ripple.png)
+!["Logo do Ripple"](/images/blockchainXcriptomoedas/ripple.png)
 <br>| - Logo do Ripple(Fonte: WIKIMEDIA COMMONS(2014))
 
 No sistema de pagamentos Ripple, trafegam tokens chamados de ripples (XRP). Segundo AZIZ (s.d.), a diferença entre uma “criptoativo” (também chamado de criptomoeda ou altcoin) e o token é estrutural: enquanto “criptoativos” possuem seu próprio blockchain em separado, tokens operam no topo de uma blockchain e podem ser gerados mais facilmente, compartilhar um mesmo blockchain com outros tokens e são utilizados na criação de aplicações descentralizadas.
@@ -86,7 +86,7 @@ A empresa e seu token XRP ganhou o noticiário de 2018 com algumas notícias ao 
 
 Além de um ator muito bem-sucedido em Hollywood, Ashton Kutcher também é um notório investidor em tecnologias. Tendo financiado no passado empresas como o Airbnb, Uber, Foursquare, Skype e Soundcloud, seu atual fundo de investimento em tecnologia, o Sound Ventures, está agora financiando a Ripple. O ator surpreendeu a todos ao doar ao vivo no EllenShow o equivalente a quatro milhões de dólares em XRP para a The Ellen DeGeneres Wildlife Fund.
 
-!["Kutcher e Oseary, da Sound Ventures, no momento da doação"](/images/BlockchainXcriptomoedas/ripple.png)
+!["Kutcher e Oseary, da Sound Ventures, no momento da doação"](/images/blockchainXcriptomoedas/ripple.png)
 <br>| - Kutcher e Oseary, da Sound Ventures, no momento da doação(Fonte: DAILY MAIL(2018))
 
 Kutcher ironiza o momento da doação, mencionando que “geralmente aspessoas doam com aqueles cheques gigantes”, mas que ele iria fazerdigitalmente,mostrando o quanto era fácil e rápido transferir dinheiro de ponta aponta. Percebeque, além de apoiador de causas nobres, o ator também é capaz de umabrilhantejogada de marketing – os usuários de criptoativos também agradecem.
@@ -99,7 +99,7 @@ Por se tratar de um blockchain aberto, o Bitcoin mantém apenas a identidade de 
 
 O criptoativo Dash (DASH) propõe um tipo diferente de blockchain que mantém o saldo e histórico de transações em sigilo, além de transações que podem ser instantaneamente confirmadas. Outro diferencial é um modelo de incentivo que não recompensa apenas os mineradores, mas também os masternodes responsáveis por validar e armazenar o blockchain e desempenhar um papel importante no ecossistema.
 
-!["Logo do Dash"](/images/BlockchainXcriptomoedas/dash.png)
+!["Logo do Dash"](/images/blockchainXcriptomoedas/dash.png)
 <br>| - Logo do Dash(Fonte: DASH(2018))
 
 ---
@@ -110,7 +110,7 @@ O criptoativo Monero (XMR) também preza pelo sigilo das transações feitas, co
 
 Tais moedas possuem fungibilidade, ou seja, suas unidades podem ser facilmente substituídas por outras; diferentemente do Bitcoin cujas unidades podem ser rastreadas facilmente desde sua criação e podem ser marcadas para serem rejeitadas por outros usuários envolvidos em atividades suspeitas, isso não pode ser realizado no Dash ou Monero, tornando-as mais atraentes para pessoas envolvidas em atividades ilícitas.
 
-!["Logo do Monero"](/images/BlockchainXcriptomoedas/monero.png)
+!["Logo do Monero"](/images/blockchainXcriptomoedas/monero.png)
 <br>| - Logo do Monero(Fonte: MONERO(2018))
 
 ---
@@ -128,12 +128,12 @@ O que o projeto IOTA defende é que essas “microtransações” realizadas ent
 
 Além disso, a arquitetura atual do blockchain em uma única corrente em que todos os mineradores validam os mesmos blocos não teria a escalabilidade necessária para uma rede de sensores que, segundo a Gartner (2017), deve ultrapassar 11 bilhões de sensores em 2018 e outras previsões (EICHMANN, 2018) falam em 50 bilhões de dispositivos conectados à Internet em 2020.
 
-!["Logo do IOTA"](/images/BlockchainXcriptomoedas/iota.png)
+!["Logo do IOTA"](/images/blockchainXcriptomoedas/iota.png)
 <br>| - Logo do IOTA(Fonte: WIKIMEDIA COMMONS(2018))
 
 A IOT propõe uma arquitetura totalmente revolucionária para validação das informações. Em vez de um blockchain de uma única corrente sequencial, os blocos formam um “emaranhado”, conhecido como The Tangle:
 
-!["Blockchain no formato Tangle ou “emaranhado”"](/images/BlockchainXcriptomoedas/tangle.png)
+!["Blockchain no formato Tangle ou “emaranhado”"](/images/blockchainXcriptomoedas/tangle.png)
 <br>| - Blockchain no formato Tangle ou “emaranhado”(Fonte: WIKIMEDIA POPOV(2018))
 
 Sua estrutura é baseada em um grafo acíclico dirigido (Directed Acyclic Graph ou DAG) em que, para qualquer vértice v, não há nenhuma ligação dirigida começando e acabando em v. Na prática, esse tipo de estrutura permite que quanto mais pessoas estejam usando a rede, mais validações aconteçam, trazendo a desejada escalabilidade; não há um gargalo como no blockchain tradicional, em que um número maior de mineradores não aumenta a performance da rede de consenso; no IOTA, quanto mais participantes, maior a performance.
@@ -159,7 +159,7 @@ A seguir, as vantagens do IOT segundo seus desenvolvedores:
 
 O criptoativo ZCASH (ZEC) tem uma proposta de blockchain que mantém o sigilo do saldo nas carteiras e do histórico de transações, algo que não difere muito de outras como DASH ou Monero. Seu destaque aqui se dá graças ao seu relacionamento com o povo venezuelano.
 
-!["Logo do ZCASH"](/images/BlockchainXcriptomoedas/zcash.png)
+!["Logo do ZCASH"](/images/blockchainXcriptomoedas/zcash.png)
 <br>| - Logo do ZCASH(Fonte: ZCASH(2018))
 
 Quando a economia de um país vai mal, sua moeda fiduciária sofre uma violenta desvalorização que impacta diretamente no dia a dia de sua população. Rapidamente os indivíduos começam a se proteger fazendo reserva de valor em outro tipo de ativo, como o ouro e o dólar.
@@ -180,7 +180,7 @@ Desde sua concepção, a proposta da rede Ethereum é audaciosa. A ideia seria r
 
 Desde sua concepção, a proposta da rede Ethereum é audaciosa. A ideia seria responder à pergunta: e se o dinheiro fosse programável? E se uma nota de dinheiro pudesse vir atrelada às suas próprias regras ou condições?
 
-!["Logo do Ethereum"](/images/BlockchainXcriptomoedas/ethereum.png)
+!["Logo do Ethereum"](/images/blockchainXcriptomoedas/ethereum.png)
 <br>| - Logo do Ethereum(Fonte: ETHEREUM(s.d))
 
 Para manter o incentivo de mineração da rede, foi criado um token chamado ether para viabilizar seu funcionamento. Atualmente, o ether é o segundo maior criptoativo em participação de mercado, segundo o CoinMarketCap.com. 
@@ -193,7 +193,7 @@ Veremos mais adiante um carítulo inteiramente dedicado ao Ethereum e seus Smart
 
 O criptoativo Dogecoin (DOGE) merece uma menção honrosa não por possuir um diferencial como os outros destacados por aqui, mas justamente por não possuir nenhum. A moeda foi criada em 2013 e seu mote era... ter como mascote um meme de um cachorro da raça Shiba Inu. Apenas isso. Alguma dúvida? Visite o site oficial do projeto (http://dogecoin.com/) e comprove você mesmo.
 
-!["Logo do Dogecoin"](/images/BlockchainXcriptomoedas/dogecoin.png)
+!["Logo do Dogecoin"](/images/blockchainXcriptomoedas/dogecoin.png)
 <br>| - Logo do Dogecoin(Fonte: DOGECOIN(2018))
 
 Apesar de sua mediocridade e não receber qualquer contribuição de seus desenvolvedores por mais de um ano, segundo a CoinMarketCap (2018a), durante a “corrida do final de 2017” sua unidade chegou a quase dois centavos de dólar, com um valor de mercado que chegou a dois bilhões de dólares. Seu valor saltou de US$ 0,003641 de 15 de dezembro de 2017 para o pico de US$ 0,01753 em 8 de janeiro de 2018, ou seja, o criptoativo passou a valer quase cinco vezes mais em apenas 24 dias de maneira puramente especulativa, sem qualquer razão sustentável para sua valorização.
