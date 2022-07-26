@@ -19,7 +19,7 @@
 [identifier01]: 01_Conceitos.md
 [identifier02]: 02_FundamentacaoTecnologica.md
 [identifier03]: 03_FuncionamentoPlataforma.md
-[identifier04]: 04_AlgoritmosDeConsenso.md.md
+[identifier04]: 04_AlgoritmosDeConsenso.md
 [identifier05]: 05_BlockchainXcriptomoedas.md
 [identifier06]: 06_AplicacoesBlockchain.md
 [identifier07]: 07_Web3.0.md
